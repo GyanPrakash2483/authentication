@@ -18,6 +18,7 @@ login_btn.onclick = function() {
         } else if(res.code == 0) {
             let jwt = res.token;
             localStorage.setItem('login_token', jwt);
+            window.location.href = './dashboard.html'
         }
     });
 }

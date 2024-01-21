@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/login_bg.webp');
+            background-size: cover;
+            backdrop-filter: blur(2px);
+            height: 100vh;
+        }
+        .title {
+            color: white;
+            font-size: 300%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 30%;
+            margin-top: 5%;
+            text-shadow: #212533 1px 0 10px;
+            transform: translateX(-30%);
+        }
+        .form {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 64px 32px 64px 32px;
+            border: 1px solid white;
+            border-radius: 32px;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: fit-content;
+            text-align: center;
+        }
+
+        input {
+            height: 48px;
+            width: 400px;
+        }
+
+        .button {
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid white;
+            padding: 12px 16px 12px 16px;
+            border-radius: 30px;
+        }
+        .button:hover {
+            background-color: aquamarine;
+            color: black;
+            transition: background-color 500ms ease-out;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="form">
-        <input type="text" id="username"><br/>
-        <input type="email" id="email"><br/>
-        <input type="password" id="password"><br/>
-        <button id="register_btn">Register</button>
+    <div class="form">
+        <div class="title">REGISTER</div><br>
+        <input type="text" id="username" placeholder="Enter Username"><br/><br>
+        <input type="email" id="email" placeholder="email@example.com"><br/><br>
+        <input type="password" id="password" placeholder="Enter Password"><br/><br>
+        <button id="register_btn" class="button">Register</button>
     </div>
     <script type="module" src="./scripts/register.js"></script>
 </body>

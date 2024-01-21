@@ -19,6 +19,7 @@ verify_otp.onclick = function() {
             alert('OTP could not be verified');
         } else if(res.code == 0) {
             //verified
+            window.location.href = './login.html';
         }
     });
 }

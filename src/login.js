@@ -40,7 +40,7 @@ const handleLogin = (req, response) => {
                 let jwt = jsonwebtoken.sign({
                     email: email
                 }, process.env.JWT_SEC, {
-                    expiresIn: '1m'
+                    expiresIn: '2h'
                 });
                 //console.log(jwt);
                 response({

@@ -5,6 +5,7 @@ const express = require('express');
 
 const register = require('./register.js');
 const login = require('./login.js');
+const dashboard = require('./dashboard.js');
 
 const PORT = process.env.PORT;
 
@@ -33,6 +34,19 @@ app.post('/auth/login', (req, res) => {
     login.handleLogin(req, function(response){
         res.send(response);
     });
+});
+
+app.post('/user/userinfo', (req, res) => {
+    //console.log(req.body);
+    if(req.body.code == 0) {
+        dashboard.getUserInfo(req, function(response){
+            res.send(response);
+        });
+    } else if(req.body.code == 1) {
+        dashboard.updateSecret(req, function(response){
+            res.send(response);
+        });
+    }
 });
 
 
