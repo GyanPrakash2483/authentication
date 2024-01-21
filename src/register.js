@@ -121,7 +121,6 @@ const handleRegistration = (req, response) => {
 const verifyOTP = (req, response) => {
     let user = {
         email: req.body.email,
-        password: req.body.password,
         OTP: req.body.OTP
     }
     //console.log(user);

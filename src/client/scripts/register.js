@@ -20,7 +20,6 @@ register_btn.onclick = function() {
             alert("User already exists.");
         } else if(res.code == 3) {
             sessionStorage.setItem('email', email.value);
-            sessionStorage.setItem('password', password.value);
             window.location.href = './otpverify.html';
         }
 

@@ -78,17 +78,9 @@ endpoint: `/auth/register`
     ```
     {
         "email": email,
-        "password": password,
         "OTP": OTP
     }
     ```
-- Verify password with password_hash, if not verified, send JSON response.
-```
-    {
-        "success": false,
-        "code": 4
-    }
-```
 - Verify OTP with OTP in `userdata` if not match, send JSON response
 ```
     {
