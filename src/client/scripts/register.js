@@ -23,6 +23,5 @@ register_btn.onclick = function() {
             window.location.href = './otpverify.html';
         }
 
-    }
-    );
+    });
 }

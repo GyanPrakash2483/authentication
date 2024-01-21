@@ -11,3 +11,6 @@ Email used to send OTP for registration.
 
 ### EMAIL_PASSWORD
 Password for the email used to send OTP.
+
+### JWT_SEC
+Secret used for JWT verification

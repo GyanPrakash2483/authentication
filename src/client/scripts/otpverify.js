@@ -20,5 +20,5 @@ verify_otp.onclick = function() {
         } else if(res.code == 0) {
             //verified
         }
-    })
+    });
 }
