@@ -14,7 +14,7 @@ login_btn.onclick = function() {
         if(res.code == 1) {
             alert('This email is not associated with any account.');
         } else if (res.code == 2) {
-            alert('Wron credentials');
+            alert('Wrong credentials');
         } else if(res.code == 0) {
             let jwt = res.token;
             localStorage.setItem('login_token', jwt);

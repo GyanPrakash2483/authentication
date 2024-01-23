@@ -7,6 +7,11 @@ Gyan Prakash Singh Jaruhar
 2023UG1091
 
 
+## Live Demo
+
+https://nodejs-production-8ce5.up.railway.app/
+
+
 ## Run your own instance
 
 - clone the repository
